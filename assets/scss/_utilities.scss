@@ -1,0 +1,9 @@
+// Backgrounds
+.bg {
+  &-green {
+    @include set-background($green);
+  }
+  &-white {
+    @include set-background($white);
+  }
+}

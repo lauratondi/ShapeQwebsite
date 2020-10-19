@@ -1,6 +1,5 @@
-:root {
-  --green: #133644;
-}
+@import 'config';
+@import 'utilities';
 
 * {
   padding: 0;
@@ -15,9 +14,10 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+b {
   font-weight: 700;
-  color: white;
+  color: $white;
 }
 
 p,
@@ -27,7 +27,7 @@ a {
 
 p {
   font-size: 25px;
-  color: white;
+  color: $white;
 }
 
 a {
@@ -46,7 +46,7 @@ img {
 .container-fluid {
   width: 100vw;
   min-height: 100vh;
-  background-color: var(--green);
+  background-color: $green;
   /* display: flex; */
 }
 
@@ -106,7 +106,7 @@ nav li {
   border-radius: 50px;
   padding: 5px;
   border: none;
-  color: var(--green);
+  color: $green;
 }
 
 .btnPrimary a {
@@ -115,27 +115,31 @@ nav li {
 
 /* ----------PAGE 2------------- */
 
-#brandSection {
-  width: 20%;
-}
-
 #pageTwo {
   padding-top: 10%;
 }
 
-.pageTwoText {
+#brandSection {
+  width: 20%;
+}
+
+#pageTwoHead {
   display: flex;
   justify-content: center;
 }
 
-.pageTwoText > * {
+#pageTwoHead > * {
   padding: 0.5%;
 }
 
-.pageTwoText h1 {
+#pageTwoHead h1 {
   font-size: 50px;
 }
 
 #brandSection {
   margin-top: -1%;
+}
+
+.col-sm {
+  padding: 5%;
 }
