@@ -17,7 +17,6 @@ h2,
 h3,
 b {
   font-weight: 700;
-  color: $white;
 }
 
 p,
@@ -27,7 +26,6 @@ a {
 
 p {
   font-size: 25px;
-  color: $white;
 }
 
 a {
@@ -45,18 +43,18 @@ img {
 .container-fluid {
   width: 100vw;
   min-height: 100vh;
-  background-color: $green;
-  /* display: flex; */
+  padding: 0%;
 }
 
 /* -------HEADER--------- */
 header {
-  width: 100%;
-  height: 5%;
+  width: 100vw;
+  // height: 5%;
   display: flex;
   /* align-items: flex-end;
   justify-content: space-around; */
   padding: 0.5%;
+  background-color: $white;
 }
 
 .brand-info {
@@ -64,18 +62,18 @@ header {
   align-items: center;
   width: 60%;
   #logo {
-    width: 20%;
-    height: 11vh;
-    margin-left: 3%;
+    width: 28%;
+    // height: 11vh;
+    margin-left: 19%;
     // background-image: url('/assets/img/Q_Green.png');
     // background-size: contain;
     // background-repeat: no-repeat;
   }
 
   #brand {
-    width: 44%;
+    width: 66%;
     margin-left: 37%;
-    height: 11vh;
+    // height: 11vh;
     // background-image: url(/assets/img/ShapeQ_Green.png);
     // background-size: contain;
     // background-repeat: no-repeat;
@@ -99,9 +97,10 @@ nav {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
-  /* justify-content: center; */
+  justify-content: center;
   width: 100%;
-  padding: 5%;
+  height: 100vh;
+  padding: 1%;
   .home-text {
     margin-top: 5%;
     p {
@@ -113,7 +112,7 @@ nav {
     border-radius: 50px;
     padding: 5px;
     border: none;
-    color: $green;
+    // color: $green;
     a {
       font-weight: 700;
     }
@@ -124,9 +123,10 @@ nav {
 
 #pageTwo {
   padding-top: 10%;
+  height: 100%;
 }
 
-#pageTwoHead {
+.pageTwoHead {
   display: flex;
   justify-content: center;
   img {
@@ -140,13 +140,12 @@ nav {
   }
 }
 
-#pageTwoText {
+.pageTwoText {
   .col-sm {
     padding: 5%;
     text-align: center;
   }
   i {
-    color: white;
     padding-bottom: 2%;
   }
 }
@@ -156,4 +155,18 @@ nav {
   display: flex;
   flex-direction: column;
   text-align: center;
+  height: 100vh;
+
+  .list {
+    align-self: center;
+  }
+  ul {
+    align-items: flex-start;
+    list-style-type: circle;
+    list-style-position: inside;
+    text-align: initial;
+  }
+  li {
+    font-size: 25px;
+  }
 }
