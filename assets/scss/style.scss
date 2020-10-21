@@ -131,7 +131,7 @@ nav {
 /* ----------PAGE 2------------- */
 
 #pageTwo {
-  // padding-top: 10%;
+  padding-top: 8%;
   height: 100vh;
 }
 
@@ -180,12 +180,13 @@ nav {
 }
 
 // ---------CONTACTS-------------
-#contact {
+#team {
   display: flex;
   flex-direction: column;
   width: 100%;
   height: 100vh;
   padding-top: 8%;
+  margin-bottom: 7%;
 
   h1 {
     text-align: center;
@@ -202,8 +203,44 @@ nav {
 
     a {
       display: flex;
-      // color: $green;
+      color: $green;
       padding-left: 4%;
+    }
+  }
+}
+
+// ---------CONTACT US----------
+
+#contact {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  padding-top: 10%;
+  flex-direction: column;
+  align-items: center;
+
+  .form {
+    width: 50%;
+    margin-top: 2%;
+
+    form {
+      display: flex;
+      flex-direction: column;
+
+      input,
+      textarea {
+        margin-bottom: 3%;
+        padding: 1%;
+        border-radius: 5px;
+        border: none;
+      }
+
+      .btnSecondary {
+        width: 20%;
+        align-self: center;
+        color: $green;
+        font-weight: 700;
+      }
     }
   }
 }
