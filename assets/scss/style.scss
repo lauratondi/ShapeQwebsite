@@ -158,22 +158,22 @@ nav {
 .pageTwoHead {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
   img {
     width: 20%;
   }
   > * {
     padding: 0.5%;
   }
-  h3 {
+  #shape {
     font-family: 'Museo Sans Rounded 300';
     font-size: 70px;
     font-weight: 100;
   }
-  h2 {
+  #q {
     font-family: 'Spearbox';
     font-weight: 100;
-    font-size: 60px;
+    font-size: 145px;
   }
 }
 
