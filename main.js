@@ -50,7 +50,7 @@ const section = document.querySelector('section');
 
 window.onscroll = function () {
   var top = window.scrollY;
-  console.log(top);
+
   if (top >= 50) {
     section.classList.add('active');
   } else {
