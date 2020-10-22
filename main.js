@@ -1,3 +1,35 @@
+// ICONS ANIMATION
+
+var icoAni = new TimelineMax({
+  duration: 1,
+  repeat: -1,
+});
+
+icoAni.to(['#trade'], { ease: 'step', x: 10 });
+icoAni.to(['#publish'], { ease: 'elastic', y: -5 }, '-=.5');
+icoAni.to(['#connect'], { rotation: 360 }, '-=.5');
+icoAni.fromTo(
+  ['#integrate2'],
+  { opacity: 0, x: -5 },
+  { opacity: 1, x: 0, ease: 'expo.out' },
+  '-=.5'
+);
+icoAni.to(['#integrate'], { opacity: 0, ease: 'expo.out' });
+icoAni.to(
+  ['#channel'],
+  {
+    ease: 'steps(2)',
+    opacity: 0.1,
+    duration: 0.2,
+    yoyo: true,
+  },
+  '-=.5'
+);
+
+window.addEventListener('load', function () {
+  icoAni.restart();
+});
+
 // $(document).ready(function () {
 //   var scroll_pos = 0;
 //   $('#section').scroll(function () {
@@ -46,17 +78,19 @@
 //   });
 // });
 // val = window.innerHeight;
-const section = document.querySelector('section');
 
-window.onscroll = function () {
-  var top = window.scrollY;
+// the one was more or less working
+// const section = document.querySelector('section');
 
-  if (top >= 50) {
-    section.classList.add('active');
-  } else {
-    section.classList.remove('active');
-  }
-};
+// window.onscroll = function () {
+//   var section = window.scrollY;
+
+//   if (section >= 50) {
+//     section.classList.add('active');
+//   } else {
+//     section.classList.remove('active');
+//   }
+// };
 
 // window.addEventListener('scroll', function () {
 //   if (
