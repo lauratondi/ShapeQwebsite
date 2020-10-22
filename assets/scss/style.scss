@@ -1,12 +1,13 @@
 @import 'config';
 @import 'utilities';
-@import url(//db.onlinewebfonts.com/c/a83356d725f309d4c24ac2daca70cd64?family=Museo+Sans+Rounded+300);
 @font-face {
   font-family: 'Museo Sans Rounded 300';
-  src: url('//db.onlinewebfonts.com/t/a83356d725f309d4c24ac2daca70cd64.eot');
-  src: url('//db.onlinewebfonts.com/t/a83356d725f309d4c24ac2daca70cd64.eot?#iefix')
-    format('embedded-opentype');
-
+  font-style: normal;
+  font-weight: normal;
+  src: local('Museo Sans Rounded 300'),
+    url('/assets/MuseoSansRounded300.woff') format('woff');
+}
+@font-face {
   font-family: 'Spearbox';
   src: url('/assets/spearbox_bigfontsite.com.ttf') format('truetype');
 }
@@ -49,6 +50,7 @@ a {
   &:hover {
     text-decoration: none;
     color: inherit;
+    font-size: 17px;
   }
 }
 
@@ -72,11 +74,8 @@ img {
 /* -------HEADER--------- */
 header {
   width: 100vw;
-  // height: 5%;
   display: flex;
-  // flex-direction: column;
   padding: 0.5%;
-  // background-color: $white;
 }
 
 .brand-info {
@@ -125,7 +124,7 @@ nav {
   height: 100%;
   padding: 10%;
   .home-text {
-    margin-top: 5%;
+    padding-top: 4%;
     text-align: center;
     p {
       font-size: 30px;
@@ -141,10 +140,6 @@ nav {
 
     a {
       font-weight: 700;
-    }
-    :hover {
-      padding: 12px 15px;
-      font-size: 18px;
     }
   }
 }
@@ -167,13 +162,13 @@ nav {
   }
   #shape {
     font-family: 'Museo Sans Rounded 300';
-    font-size: 70px;
-    font-weight: 100;
+    // font-size: 70px;
+    font-weight: 300;
   }
   #q {
     font-family: 'Spearbox';
     font-weight: 100;
-    font-size: 145px;
+    font-size: 140px;
   }
 }
 
@@ -277,7 +272,24 @@ nav {
   }
 }
 
-// MEDIA QUERIES
+// --------FOOTER------------
+footer {
+  border-top: 2px solid white;
+}
+#footer {
+  padding-top: 1%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: baseline;
+
+  p {
+    font-size: 15px;
+    padding-right: 2%;
+  }
+}
+
+//----------- MEDIA QUERIES---------
 @media (max-width: 992px) {
   nav {
     margin-left: 10%;
