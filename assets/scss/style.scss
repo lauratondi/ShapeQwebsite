@@ -65,40 +65,27 @@ img {
   padding: 0% !important;
 }
 
-#row {
-  height: 2vh;
-  background-color: $green;
-  width: 100%;
-}
+// #row {
+//   height: 2vh;
+//   background-color: $green;
+//   width: 100%;
+// }
 
 /* -------HEADER--------- */
 header {
   width: 100vw;
   display: flex;
   padding: 0.5%;
+  max-height: 10vh;
 }
 
-.brand-info {
-  display: flex;
-  align-items: center;
-
+.brand {
   width: 60%;
-  #logo {
-    width: 30%;
-    // height: 11vh;
-    margin-left: 19%;
-    // background-image: url('/assets/img/Q_Green.png');
-    // background-size: contain;
-    // background-repeat: no-repeat;
-  }
-
+  align-self: center;
   #brand {
-    width: 70%;
-    margin-left: 37%;
-    // height: 11vh;
-    // background-image: url(/assets/img/ShapeQ_Green.png);
-    // background-size: contain;
-    // background-repeat: no-repeat;
+    width: 30%;
+
+    margin-left: 5%;
   }
 }
 
@@ -106,6 +93,9 @@ nav {
   width: 40%;
   align-self: flex-end;
   margin-left: 19%;
+  ul {
+    margin-bottom: 0;
+  }
   li {
     display: inline;
     list-style: none;
