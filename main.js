@@ -15,13 +15,18 @@ icoAni.fromTo(
   '-=.5'
 );
 icoAni.to(['#integrate'], { opacity: 0, ease: 'expo.out' });
+icoAni.fromTo(
+  ['#blockchain'],
+  { scaleX: 1 },
+  { scaleX: 0, transformOrigin: '0% 0%', ease: 'back.out' },
+  '-=.5'
+);
 icoAni.to(
   ['#channel'],
   {
     ease: 'steps(2)',
     opacity: 0.1,
     duration: 0.2,
-    yoyo: true,
   },
   '-=.5'
 );
