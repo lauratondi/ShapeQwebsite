@@ -1,9 +1,10 @@
 // LOGO ANIMATION
 
 function play() {
-  TweenLite.set('#logo', { x: -700, y: 100 });
+  TweenLite.set('#logo', { opacity: 0, x: -700, y: 100 });
   var tl = new TimelineLite({ delay: 0.5 });
-  tl.to('#logo', 0.5, { y: -150, ease: Bounce.easeinOut })
+  tl.to('#logo', 0.5, { opacity: 1, y: -150, ease: Bounce.easeinOut })
+
     .to('#logo', 1.25, { y: 0, ease: Bounce.easeOut })
     .to('#logo', 0.5, { rotation: 360 }, '-=.5')
     .to('#logo', 2.5, { x: '+=700' }, '-=1.75');
