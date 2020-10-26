@@ -47,9 +47,9 @@ nav {
   display: flex;
   align-items: center;
   flex-direction: column;
-
+  padding-top: 1%;
   .logoDiv {
-    padding-top: 6%;
+    padding-top: 8%;
     width: 8%;
   }
 
@@ -58,9 +58,9 @@ nav {
     align-items: center;
     justify-content: center;
     display: flex;
-    padding: 6%;
+    padding: 3%;
     .home-text {
-      padding-top: 6%;
+      padding-top: 3%;
       text-align: center;
       p {
         font-size: 30px;
@@ -183,7 +183,7 @@ nav {
       width: 80%;
 
       img {
-        border-radius: 4rem;
+        border-radius: 2.7rem;
         width: 50%;
         margin-left: 0%;
         align-self: flex-end;
@@ -275,6 +275,9 @@ footer {
   // }
 }
 @media (max-width: 480px) {
+  nav {
+    display: none;
+  }
   h1 {
     font-size: 40px;
   }

@@ -1,31 +1,14 @@
 // LOGO ANIMATION
-var logoAni = new TimelineMax({
-  duration: 2,
-});
+
 function play() {
-  TweenLite.set('#logo', { x: -700 });
+  TweenLite.set('#logo', { x: -700, y: 100 });
   var tl = new TimelineLite({ delay: 0.5 });
-  tl.to('#logo', 0.5, { y: -300 })
+  tl.to('#logo', 0.5, { y: -150, ease: Bounce.easeinOut })
     .to('#logo', 1.25, { y: 0, ease: Bounce.easeOut })
+    .to('#logo', 0.5, { rotation: 360 }, '-=.5')
     .to('#logo', 2.5, { x: '+=700' }, '-=1.75');
 }
 play();
-// logoAni
-
-//   .to('#logo', 0.1, {
-//     transformOrigin: '50% 100%',
-//     scaleY: 0.25,
-//     yoyo: true,
-//     repeat: 1,
-//   })
-
-//   .to('#logo', 0.75, {
-//     x: 100,
-//     y: -200,
-//     ease: Circ.easeOut,
-//     yoyo: true,
-//     repeat: 1,
-//   });
 
 // ICONS ANIMATION
 var icoAni = new TimelineMax({
@@ -60,10 +43,9 @@ icoAni.to(
 );
 
 window.addEventListener('load', function () {
-  logoAni.restart();
   icoAni.restart();
 });
-logoAni.restart();
+
 // $(document).ready(function () {
 //   var scroll_pos = 0;
 //   $('#section').scroll(function () {
