@@ -28,7 +28,7 @@ header {
 nav {
   width: 40%;
   align-self: flex-end;
-  margin-left: 19%;
+  margin-left: 5%;
   ul {
     margin-bottom: 0;
   }
@@ -67,10 +67,7 @@ nav {
     letter-spacing: 1px;
     a {
       font-weight: 600;
-      font-size: 18px;
-      &:hover {
-        font-size: 19px;
-      }
+      // font-size: 20px;
     }
   }
 }
@@ -256,15 +253,15 @@ footer {
 
 //----------- MEDIA QUERIES---------
 @media (max-width: 992px) {
-  nav {
-    margin-left: 10%;
-  }
+  // nav {
+  //   margin-left: 5%;
+  // }
 }
 
 @media (max-width: 919px) {
-  nav {
-    margin-left: 5%;
-  }
+  // nav {
+  //   margin-left: 0%;
+  // }
 }
 @media (max-width: 480px) {
   h1 {

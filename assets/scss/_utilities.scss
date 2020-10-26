@@ -28,8 +28,7 @@
 
 body {
   overflow-x: hidden;
-  // font-family: 'Noto Sans JP', sans-serif;
-  font-family: 'Crimson Text', serif;
+  font-family: 'Merriweather', serif;
   width: 100vw;
   min-height: 100vh;
 }
@@ -38,12 +37,12 @@ h1,
 h2,
 h3,
 b {
-  font-weight: 600;
+  font-weight: 700;
 }
 
 p,
 a {
-  font-weight: 400;
+  font-weight: 300;
 }
 
 h1 {
