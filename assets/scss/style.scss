@@ -28,7 +28,6 @@ nav {
   }
   li {
     display: inline;
-    list-style: none;
     margin-right: 5%;
     font-family: 'Museo Sans Rounded 300';
     color: $green;
@@ -118,8 +117,9 @@ nav {
 }
 
 .pageTwoText {
+  padding-top: 3%;
   .col-sm {
-    padding: 5%;
+    padding: 2%;
     text-align: center;
   }
   i {
@@ -141,17 +141,11 @@ nav {
   }
 
   .list {
+    padding-top: 2%;
     align-self: center;
   }
-  ul {
-    align-items: flex-start;
-    list-style-type: circle;
-    list-style-position: inside;
-    text-align: initial;
-  }
-  li {
-    font-size: 25px;
-    // text-align: center;
+  hr {
+    border: 1px dashed $green;
   }
 }
 
@@ -261,6 +255,12 @@ nav {
   nav {
     margin-left: 0%;
   }
+
+  #contact {
+    .form {
+      width: 50%;
+    }
+  }
 }
 
 @media (max-width: 43em) {
@@ -272,11 +272,22 @@ nav {
   }
 
   p {
-    font-size: 20px !important;
+    font-size: 18px !important;
   }
 
-  .logoDiv {
-    width: 10% !important;
+  #home {
+    .logoDiv {
+      width: 10% !important;
+    }
+  }
+
+  #pageTwo {
+    .pageTwoHead {
+      .logo {
+        width: 10% !important;
+        padding-bottom: 3%;
+      }
+    }
   }
 
   #team {
