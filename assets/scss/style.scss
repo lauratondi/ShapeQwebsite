@@ -253,9 +253,13 @@ nav {
 //----------- MEDIA QUERIES---------
 @media (max-width: 62em) {
   .brand {
-    width: 70%;
+    width: 50%;
+    #brand {
+      width: 40%;
+    }
   }
   nav {
+    width: 50%;
     margin-left: 0%;
   }
 
@@ -268,7 +272,9 @@ nav {
 
 @media (max-width: 43em) {
   .brand {
-    width: 80%;
+    #brand {
+      width: 50%;
+    }
   }
   nav {
     display: none;
