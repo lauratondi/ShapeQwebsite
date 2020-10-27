@@ -28,7 +28,8 @@
 
 body {
   overflow-x: hidden;
-  font-family: 'Merriweather', serif;
+  // font-family: 'Merriweather', serif;
+  font-family: 'Roboto', sans-serif;
   width: 100vw;
   min-height: 100vh;
 }
@@ -42,7 +43,7 @@ b {
 
 p,
 a {
-  font-weight: 300;
+  font-weight: 400;
 }
 
 h1 {

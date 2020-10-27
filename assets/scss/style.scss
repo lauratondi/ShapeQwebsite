@@ -1,12 +1,6 @@
 @import 'config';
 @import 'utilities';
 
-// #row {
-//   height: 2vh;
-//   background-color: $green;
-//   width: 100%;
-// }
-
 /* -------HEADER--------- */
 header {
   width: 100vw;
@@ -36,6 +30,8 @@ nav {
     display: inline;
     list-style: none;
     margin-right: 5%;
+    font-family: 'Museo Sans Rounded 300';
+    color: $green;
   }
 }
 
@@ -60,11 +56,11 @@ nav {
     display: flex;
     padding: 3%;
     .home-text {
-      padding-top: 3%;
+      padding: 4%;
       text-align: center;
-      p {
-        font-size: 30px;
-      }
+      // p {
+      //   font-size: 30px;
+      // }
     }
   }
 
@@ -75,9 +71,9 @@ nav {
     transition: transform 0.2s;
     background-color: $green;
     color: $white;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     a {
-      font-weight: 600;
+      font-weight: 700;
       // font-size: 20px;
     }
   }
@@ -94,8 +90,8 @@ nav {
   justify-content: center;
   align-items: center;
   width: 100%;
-  .shape {
-    width: 20%;
+  .logo {
+    width: 7%;
     // background-image: url(/assets/img/ShapeQ_Green.png);
     // background-size: contain;
     // background-repeat: no-repeat;
@@ -246,9 +242,7 @@ nav {
 }
 
 // --------FOOTER------------
-footer {
-  border-top: 2px solid white;
-}
+
 #footer {
   padding-top: 1%;
   display: flex;
@@ -263,18 +257,13 @@ footer {
 }
 
 //----------- MEDIA QUERIES---------
-@media (max-width: 992px) {
-  // nav {
-  //   margin-left: 5%;
-  // }
+@media (max-width: 62em) {
+  nav {
+    margin-left: 0%;
+  }
 }
 
-@media (max-width: 919px) {
-  // nav {
-  //   margin-left: 0%;
-  // }
-}
-@media (max-width: 480px) {
+@media (max-width: 43em) {
   nav {
     display: none;
   }
@@ -284,6 +273,10 @@ footer {
 
   p {
     font-size: 20px !important;
+  }
+
+  .logoDiv {
+    width: 10% !important;
   }
 
   #team {
