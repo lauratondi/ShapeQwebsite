@@ -90,5 +90,5 @@ ScrollTrigger.create({
       duration: 2,
       ease: 'sine',
     }),
-  // markers: true,
+  markers: true,
 });

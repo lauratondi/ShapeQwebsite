@@ -46,11 +46,14 @@
   <section class="section bg-white" id="contact">
     <div><h1>Contact us</h1></div>
     <div class="form">
-      <form action="">
-        <input type="text" id="name" name="name" placeholder="Name" />
-        <input type="text" id="email" name="email" placeholder="Email" />
+      <form method="post" action="lauramars85@gmail.com" enctype="multipart/form-data">
+        <input type="text" id="name" name="name" placeholder="Name" required/>
+        <input type="email" id="email" name="email" placeholder="Email" required/>
         <textarea
+        id='message'
+        name='message'
           placeholder="Leave us a message"
+          required
           style="height: 200px"
         ></textarea>
 
