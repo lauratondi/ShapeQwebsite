@@ -1,0 +1,25 @@
+{
+  "name": "shapeq-copia",
+  "version": "1.0.0",
+  "description": "Contact form",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lauratondi/ContactForm.git"
+  },
+  "author": "Laura Tondi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lauratondi/ContactForm/issues"
+  },
+  "homepage": "https://github.com/lauratondi/ContactForm#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "multiparty": "^4.2.2",
+    "nodemailer": "^6.4.14"
+  }
+}
