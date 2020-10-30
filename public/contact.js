@@ -13,7 +13,7 @@ const formEvent = form.addEventListener('submit', (event) => {
 
 const sendMail = (mail) => {
   //1.
-  fetch('https://shapeq.netlify.app/send', {
+  fetch('http://127.0.0.1:5500/public/contact.html/send', {
     method: 'post', //2.
     body: mail, //3.
   }).then((response) => {
