@@ -1,27 +1,10 @@
-
-<?php
-
-
-if($_POST["message"]) {
-
-
-mail("lauramars85@gmail.com", "Here is the subject line",
-
-
-$_POST["insert your message here"]. "From: an@email.address");
-
-
-}
-
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" href="/assets/img/Q_Green.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <script
       src="https://kit.fontawesome.com/d53ef4d3a9.js"
       crossorigin="anonymous"
@@ -64,7 +47,7 @@ $_POST["insert your message here"]. "From: an@email.address");
   <section class="section bg-white" id="contact">
     <div><h1>Contact us</h1></div>
     <div class="form">
-      <form method="post" action="subscriberform.php" enctype="multipart/form-data">
+      <form method="post" action="" enctype="multipart/form-data">
         <input type="text" id="name" name="name" placeholder="Name" required/>
         <input type="email" id="email" name="email" placeholder="Email" required/>
         <textarea
