@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/lauratondi/ShapeQwebsite/issues"
   },
-  "homepage": "https://github.com/lauratondi/ShapeQwebsite#readme"
+  "homepage": "https://github.com/lauratondi/ShapeQwebsite#readme",
+  "dependencies": {
+    "sass": "^1.28.0"
+  }
 }
