@@ -1,0 +1,345 @@
+@import 'config';
+@import 'utilities';
+
+/* -------HEADER--------- */
+header {
+  width: 100vw;
+  display: flex;
+  padding: 0.5%;
+  max-height: 10vh;
+  // border-bottom: 1px black solid;
+}
+
+.brand {
+  width: 60%;
+  align-self: center;
+
+  #brand {
+    width: 30%;
+
+    margin-left: 5%;
+  }
+}
+
+nav {
+  width: 40%;
+  align-self: flex-end;
+  margin-left: 5%;
+  padding-top: 20%;
+  ul {
+    margin-bottom: 0;
+  }
+  li {
+    display: inline;
+    margin-right: 5%;
+    color: $green;
+  }
+}
+
+/* ---------HOME------------- */
+
+#home {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  padding-top: 1%;
+  align-items: center;
+
+  .home-right {
+    width: 50%;
+    padding-right: 2%;
+    video {
+      width: 100%;
+    }
+  }
+  .home-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .logoDiv {
+    padding-top: 8%;
+    width: 15%;
+  }
+
+  .infoHome {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 3%;
+    .home-text {
+      padding: 4%;
+      text-align: center;
+      // p {
+      //   font-size: 30px;
+      // }
+    }
+  }
+
+  .btnPrimary {
+    border-radius: 50px;
+    padding: 9px;
+    border: none;
+    transition: transform 0.2s;
+    background-color: $lightGreen;
+    color: $white;
+    letter-spacing: 1px;
+  }
+}
+/* ----------PAGE 2------------- */
+
+#pageTwo {
+  padding-top: 8%;
+  height: 100%;
+}
+
+.pageTwoHead {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  .logo {
+    width: 7%;
+    // background-image: url(/assets/img/ShapeQ_Green.png);
+    // background-size: contain;
+    // background-repeat: no-repeat;
+    // object-fit: scale-down;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  > * {
+    padding: 0.5%;
+  }
+}
+
+.pageTwoText {
+  padding-top: 3%;
+  // .row {
+  //   flex-wrap: nowrap !important;
+  // }
+  .col-sm {
+    padding: 2%;
+    text-align: center;
+  }
+  i {
+    padding-bottom: 2%;
+  }
+}
+// ----------MARKETPLACE-------------
+#marketplace {
+  padding: 10%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  position: relative;
+
+  .divMarkt {
+    display: flex;
+    align-self: center;
+  }
+
+  .list {
+    padding-top: 2%;
+    align-self: center;
+  }
+  hr {
+    border: 1px dashed $white;
+  }
+}
+
+#marketplace::after {
+  background-image: url('../img/photos/lamp.jpg');
+  // padding-top: 10%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.3;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  right: 0%;
+  left: 0%;
+  z-index: 0;
+  content: '';
+}
+// ---------TEAM-------------
+#team {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding-top: 8%;
+
+  h1 {
+    text-align: center;
+  }
+  .figuresProfile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4%;
+    .profile {
+      display: grid;
+      grid-template-columns: 1fr 4fr;
+      align-items: center;
+      padding: 1rem;
+      width: 80%;
+
+      img {
+        border-radius: 2.7rem;
+        width: 50%;
+        margin-left: 0%;
+        align-self: flex-end;
+      }
+      a {
+        display: flex;
+        align-items: baseline;
+        > * {
+          padding: 0.5%;
+        }
+      }
+      p {
+        font-size: 18px;
+      }
+      h2 {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+// ---------CONTACT US----------
+
+#contact {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  padding-top: 5%;
+  flex-direction: column;
+  align-items: center;
+
+  .form {
+    width: 30%;
+    margin-top: 2%;
+
+    form {
+      display: flex;
+      flex-direction: column;
+      // border: 1px solid #ccc;
+      // border-radius: 1em;
+
+      input,
+      textarea {
+        margin-bottom: 3%;
+        padding: 1%;
+        border-radius: 5px;
+        border: 1px solid $green;
+      }
+
+      .btnSecondary {
+        padding: 2% 5%;
+        align-self: center;
+        background-color: $green;
+        color: $white;
+        // font-weight: 400;
+        &:hover {
+          font-size: 17px;
+        }
+      }
+    }
+  }
+}
+
+// --------FOOTER------------
+
+#footer {
+  padding-top: 1%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: baseline;
+
+  p {
+    font-size: 15px;
+    padding-right: 2%;
+  }
+}
+
+//----------- MEDIA QUERIES---------
+@media (max-width: 62em) {
+  .brand {
+    width: 50%;
+    #brand {
+      width: 40%;
+    }
+  }
+  nav {
+    width: 50%;
+    margin-left: 0%;
+  }
+
+  #contact {
+    .form {
+      width: 50%;
+    }
+  }
+}
+
+@media (max-width: 43em) {
+  #home {
+    flex-direction: column-reverse;
+    .home-right,
+    .home-left {
+      width: 80%;
+    }
+  }
+  .brand {
+    #brand {
+      width: 50%;
+    }
+  }
+  nav {
+    display: none;
+  }
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 29px;
+  }
+
+  h3 {
+    font-size: 23px;
+  }
+
+  p {
+    font-size: 18px !important;
+  }
+
+  #pageTwo {
+    .pageTwoHead {
+      .logo {
+        width: 10% !important;
+        padding-bottom: 3%;
+      }
+    }
+  }
+
+  #team {
+    h2 {
+      font-size: 16px !important;
+    }
+    p {
+      font-size: 16px !important;
+    }
+  }
+}
