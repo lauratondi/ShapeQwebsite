@@ -60,21 +60,21 @@ ScrollTrigger.create({
       ease: 'sine',
     }),
   onLeave: () =>
-    gsap.to('#marketplace', {
+    gsap.to(['#marketplace', '#footer'], {
       backgroundColor: '#133644',
       color: 'white',
       duration: 2,
       ease: 'sine',
     }),
   onLeaveBack: () =>
-    gsap.to('#marketplace', {
+    gsap.to(['#marketplace', '#footer'], {
       backgroundColor: '#133644',
       color: 'white',
       duration: 2,
       ease: 'sine',
     }),
   onEnterBack: () =>
-    gsap.to('#marketplace', {
+    gsap.to(['#marketplace', '#footer'], {
       backgroundColor: 'white',
       color: '#133644',
       duration: 2,

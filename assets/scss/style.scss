@@ -25,7 +25,7 @@ nav {
   width: 40%;
   align-self: flex-end;
   margin-left: 5%;
-  padding-top: 20%;
+
   ul {
     margin-bottom: 0;
   }
@@ -43,7 +43,7 @@ nav {
   height: 100%;
   display: flex;
   flex-direction: row;
-  padding-top: 1%;
+  padding-top: 6%;
   align-items: center;
 
   .home-right {
@@ -72,10 +72,6 @@ nav {
     padding: 3%;
     .home-text {
       padding: 4%;
-      text-align: center;
-      // p {
-      //   font-size: 30px;
-      // }
     }
   }
 
@@ -102,7 +98,7 @@ nav {
   align-items: center;
   width: 100%;
   .logo {
-    width: 7%;
+    width: 5%;
     // background-image: url(/assets/img/ShapeQ_Green.png);
     // background-size: contain;
     // background-repeat: no-repeat;
@@ -145,23 +141,34 @@ nav {
     display: flex;
     align-self: center;
   }
-
   .list {
-    padding-top: 2%;
-    align-self: center;
-  }
-  hr {
-    border: 1px dashed $white;
+    display: flex;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+
+    > * {
+      padding: 0.5%;
+    }
+    #btnBox {
+      background-color: $lightGreen;
+      padding: 1%;
+      border: none;
+      border-radius: 5px;
+    }
+    p {
+      padding-right: 2%;
+    }
   }
 }
 
 #marketplace::after {
-  background-image: url('../img/photos/lamp.jpg');
+  background-image: url('/assets/img/photos/ice.jpg');
   // padding-top: 10%;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.3;
+  opacity: 0.4;
   position: absolute;
   top: 0%;
   bottom: 0%;
@@ -247,8 +254,9 @@ nav {
       .btnSecondary {
         padding: 2% 5%;
         align-self: center;
-        background-color: $green;
+        background-color: $lightGreen;
         color: $white;
+        border: none;
         // font-weight: 400;
         &:hover {
           font-size: 17px;
@@ -274,6 +282,7 @@ nav {
 }
 
 //----------- MEDIA QUERIES---------
+// 992px
 @media (max-width: 62em) {
   .brand {
     width: 50%;
@@ -286,6 +295,15 @@ nav {
     margin-left: 0%;
   }
 
+  #pageTwo {
+    .pageTwoHead {
+      .logo {
+        width: 6% !important;
+        padding-bottom: 1%;
+      }
+    }
+  }
+
   #contact {
     .form {
       width: 50%;
@@ -293,6 +311,7 @@ nav {
   }
 }
 
+// 668px
 @media (max-width: 43em) {
   #home {
     flex-direction: column-reverse;
@@ -306,9 +325,7 @@ nav {
       width: 50%;
     }
   }
-  nav {
-    display: none;
-  }
+
   h1 {
     font-size: 40px;
   }
@@ -328,8 +345,8 @@ nav {
   #pageTwo {
     .pageTwoHead {
       .logo {
-        width: 10% !important;
-        padding-bottom: 3%;
+        width: 7% !important;
+        padding-bottom: 2%;
       }
     }
   }
