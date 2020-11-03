@@ -16,19 +16,25 @@ header {
 
   #brand {
     width: 30%;
-
     margin-left: 5%;
   }
 }
 
 nav {
   width: 40%;
+  justify-content: flex-end !important;
 
+  .nav-link {
+    padding-left: 0 !important;
+  }
   b {
     color: $green !important;
   }
   .login {
-    color: $lightGreen !important;
+    border-radius: 40px;
+    background-color: $lightGreen;
+    color: $white !important;
+    padding: 6px;
   }
 }
 
@@ -73,14 +79,17 @@ nav {
 
   .btnPrimary {
     border-radius: 50px;
-    padding: 15px;
+    padding: 13px;
     border: none;
     transition: transform 0.2s;
     background-color: $lightGreen;
     color: $white;
     letter-spacing: 1px;
-
     margin-left: 4%;
+    font-size: 18px;
+    &:hover {
+      font-size: 19px;
+    }
   }
 }
 /* ----------PAGE 2------------- */
@@ -161,7 +170,7 @@ nav {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.2;
+  opacity: 0.1;
   position: absolute;
   top: 0%;
   bottom: 0%;
@@ -275,6 +284,27 @@ nav {
 }
 
 //----------- MEDIA QUERIES---------
+@media (max-width: 1155px) {
+  .nav-item {
+    padding-left: 2px !important;
+    // padding-right: 2px;
+  }
+}
+@media (max-width: 1094px) {
+  .nav-item {
+    padding-left: 1px !important;
+    // padding-right: 1px;
+  }
+}
+@media (max-width: 1025px) {
+  .nav-item {
+    padding-left: 0px !important;
+    b {
+      font-size: 15px !important;
+    }
+  }
+}
+
 // 992px
 @media (max-width: 62em) {
   .brand {
@@ -283,9 +313,9 @@ nav {
       width: 40%;
     }
   }
-  // nav {
-  //   width: 50%;
-  //   margin-left: 0%;
+
+  // .nav-item {
+  //   padding-left: 0px !important;
   // }
 
   #pageTwo {
