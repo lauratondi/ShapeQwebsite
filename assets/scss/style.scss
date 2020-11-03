@@ -23,16 +23,12 @@ header {
 
 nav {
   width: 40%;
-  align-self: flex-end;
-  margin-left: 5%;
 
-  ul {
-    margin-bottom: 0;
+  b {
+    color: $green !important;
   }
-  li {
-    display: inline;
-    margin-right: 5%;
-    color: $green;
+  .login {
+    color: $lightGreen !important;
   }
 }
 
@@ -66,7 +62,7 @@ nav {
 
   .infoHome {
     flex-direction: column;
-    align-items: center;
+    align-items: end;
     justify-content: center;
     display: flex;
     padding: 3%;
@@ -77,12 +73,14 @@ nav {
 
   .btnPrimary {
     border-radius: 50px;
-    padding: 9px;
+    padding: 15px;
     border: none;
     transition: transform 0.2s;
     background-color: $lightGreen;
     color: $white;
     letter-spacing: 1px;
+
+    margin-left: 4%;
   }
 }
 /* ----------PAGE 2------------- */
@@ -148,14 +146,9 @@ nav {
     justify-content: center;
 
     > * {
-      padding: 0.5%;
+      padding: 0.3%;
     }
-    #btnBox {
-      background-color: $lightGreen;
-      padding: 1%;
-      border: none;
-      border-radius: 5px;
-    }
+
     p {
       padding-right: 2%;
     }
@@ -168,7 +161,7 @@ nav {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.3;
+  opacity: 0.2;
   position: absolute;
   top: 0%;
   bottom: 0%;
@@ -290,10 +283,10 @@ nav {
       width: 40%;
     }
   }
-  nav {
-    width: 50%;
-    margin-left: 0%;
-  }
+  // nav {
+  //   width: 50%;
+  //   margin-left: 0%;
+  // }
 
   #pageTwo {
     .pageTwoHead {
