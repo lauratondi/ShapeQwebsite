@@ -53,7 +53,7 @@ ScrollTrigger.create({
   start: 'top 40%',
   end: 'bottom 50%',
   onEnter: () =>
-    gsap.to('#marketplace', {
+    gsap.to(['#marketplace', '#footer'], {
       backgroundColor: 'white',
       color: '#133644',
       duration: 2,
