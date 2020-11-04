@@ -7,6 +7,7 @@ header {
   display: flex;
   padding: 0.5%;
   max-height: 10vh;
+  justify-content: space-between;
   // border-bottom: 1px black solid;
 }
 
@@ -21,7 +22,7 @@ header {
 }
 
 nav {
-  width: 40%;
+  // width: 40%;
   justify-content: flex-end !important;
 
   .navbar-nav {
