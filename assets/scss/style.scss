@@ -24,6 +24,9 @@ nav {
   width: 40%;
   justify-content: flex-end !important;
 
+  .navbar-nav {
+    align-items: flex-end;
+  }
   .nav-link {
     padding-left: 0 !important;
   }
@@ -114,10 +117,6 @@ nav {
   width: 100%;
   .logo {
     width: 5%;
-    // background-image: url(/assets/img/ShapeQ_Green.png);
-    // background-size: contain;
-    // background-repeat: no-repeat;
-    // object-fit: scale-down;
 
     img {
       width: 100%;
@@ -186,6 +185,7 @@ nav {
   z-index: 0;
   content: '';
 }
+
 // ---------TEAM-------------
 #team {
   display: flex;
@@ -249,8 +249,6 @@ nav {
     form {
       display: flex;
       flex-direction: column;
-      // border: 1px solid #ccc;
-      // border-radius: 1em;
 
       input,
       textarea {
@@ -266,7 +264,7 @@ nav {
         background-color: $lightGreen;
         color: $white;
         border: none;
-        // font-weight: 400;
+
         &:hover {
           font-size: 17px;
         }
@@ -291,25 +289,22 @@ nav {
 }
 
 //----------- MEDIA QUERIES---------
-@media (max-width: 1155px) {
+@media (max-width: 1187px) {
   .nav-item {
     padding-left: 2px !important;
     // padding-right: 2px !important;
   }
 }
-@media (max-width: 1094px) {
+@media (max-width: 1045px) {
   .nav-item {
     padding-left: 1px !important;
     // padding-right: 1px !important;
   }
 }
-@media (max-width: 1025px) {
+@media (max-width: 1035px) {
   .nav-item {
     padding-left: 0px !important;
     padding-right: 0px !important;
-    b {
-      font-size: 15px !important;
-    }
   }
 }
 
@@ -321,10 +316,6 @@ nav {
       width: 40%;
     }
   }
-
-  // .nav-item {
-  //   padding-left: 0px !important;
-  // }
 
   #pageTwo {
     .pageTwoHead {
