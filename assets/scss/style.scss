@@ -5,15 +5,18 @@
 header {
   width: 100vw;
   display: flex;
-  padding: 0.5%;
-  max-height: 10vh;
+  // padding: 0.5%;
+  // max-height: 10vh;
   justify-content: space-between;
   // border-bottom: 1px black solid;
+  @media (min-width: 991px) {
+    max-height: 10vh;
+  }
 }
 
 .brand {
   width: 60%;
-  align-self: center;
+  // align-self: center;
 
   #brand {
     width: 30%;
