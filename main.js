@@ -94,6 +94,7 @@ ScrollTrigger.create({
       duration: 2,
       ease: 'sine',
     }),
+
   onLeave: () =>
     gsap.to('#marketplace', {
       backgroundColor: 'white',
@@ -112,6 +113,41 @@ ScrollTrigger.create({
     gsap.to('#marketplace', {
       backgroundColor: '#133644',
       color: 'white',
+      duration: 2,
+      ease: 'sine',
+    }),
+  // markers: true,
+});
+
+ScrollTrigger.create({
+  trigger: '#footer',
+  start: 'top 100%',
+  end: 'bottom 0%',
+  onEnter: () =>
+    gsap.to('#footer', {
+      backgroundColor: 'white',
+      color: '#133644',
+      duration: 2,
+      ease: 'sine',
+    }),
+  onLeave: () =>
+    gsap.to('#footer', {
+      backgroundColor: '#133644',
+      color: 'white',
+      duration: 2,
+      ease: 'sine',
+    }),
+  onLeaveBack: () =>
+    gsap.to('#footer', {
+      backgroundColor: '#133644',
+      color: 'white',
+      duration: 2,
+      ease: 'sine',
+    }),
+  onEnterBack: () =>
+    gsap.to('#footer', {
+      backgroundColor: 'white',
+      color: '#133644',
       duration: 2,
       ease: 'sine',
     }),

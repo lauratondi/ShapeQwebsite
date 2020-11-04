@@ -27,6 +27,7 @@ nav {
 
   .navbar-nav {
     align-items: flex-end;
+    z-index: 1;
   }
   .nav-link {
     padding-left: 0 !important;
@@ -109,6 +110,7 @@ nav {
 #pageTwo {
   padding-top: 8%;
   height: 100%;
+  padding-bottom: 8%;
 }
 
 .pageTwoHead {
@@ -147,7 +149,8 @@ nav {
   display: flex;
   flex-direction: column;
   text-align: center;
-  height: 100%;
+  justify-content: center;
+  height: 100vh;
   width: 100%;
   position: relative;
 
@@ -200,19 +203,18 @@ nav {
   }
   .figuresProfile {
     display: flex;
-    // flex-direction: column;
-    align-items: center;
+    justify-content: flex-end;
     padding-top: 4%;
     .profile {
-      display: grid;
-      // grid-template-columns: 1fr 4fr;
-      align-items: center;
+      // display: grid;
+
+      // align-items: center;
       padding: 1rem;
-      width: 80%;
+      width: 30%;
 
       img {
         border-radius: 5rem;
-        width: 50%;
+        width: 30%;
         margin-left: 0%;
         align-self: flex-end;
       }
@@ -259,15 +261,17 @@ nav {
         border: 1px solid $green;
       }
 
-      .btnSecondary {
+      .btnPrimary {
+        border-radius: 30px;
+        letter-spacing: 1px;
         padding: 2% 5%;
         align-self: center;
         background-color: $lightGreen;
         color: $white;
         border: none;
-
+        font-size: 18px;
         &:hover {
-          font-size: 17px;
+          font-size: 19px;
         }
       }
     }
