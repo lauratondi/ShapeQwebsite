@@ -9,9 +9,9 @@ header {
   // max-height: 10vh;
   justify-content: space-between;
   // border-bottom: 1px black solid;
-  @media (min-width: 991px) {
-    max-height: 10vh;
-  }
+  // @media (min-width: 991px) {
+  //   max-height: 10vh;
+  // }
 }
 
 .brand {
@@ -27,11 +27,10 @@ header {
 nav {
   // width: 40%;
   justify-content: flex-end !important;
-
-  .navbar-nav {
-    align-items: flex-end;
-    z-index: 1;
-  }
+  align-items: flex-end !important;
+  // .navbar-nav {
+  //   // align-items: flex-end !important;
+  // }
   .nav-link {
     padding-left: 0 !important;
   }
@@ -128,7 +127,7 @@ nav {
     padding-top: 5%;
 
     .card {
-      border: $lightGreen 1px solid;
+      border: $lightGreen 2px solid;
       width: 20%;
       // padding: 1%;
       .card-title {
@@ -253,7 +252,7 @@ nav {
   .figuresProfile {
     display: flex;
     justify-content: flex-end;
-    padding-top: 6%;
+    padding-top: 4%;
     .profile {
       // display: grid;
 
