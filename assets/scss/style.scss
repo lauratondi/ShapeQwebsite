@@ -58,10 +58,11 @@ nav {
 
 #home {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: row;
   padding-top: 6%;
+  padding-bottom: 6%;
   align-items: center;
 
   .home-right {
