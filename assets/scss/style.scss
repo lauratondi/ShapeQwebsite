@@ -276,6 +276,9 @@ nav {
         &:hover {
           font-size: 19px;
         }
+        @media (max-width: 991px) {
+          padding: 4% 7%;
+        }
       }
     }
   }
