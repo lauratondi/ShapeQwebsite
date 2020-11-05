@@ -58,7 +58,7 @@ nav {
 
 #home {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: row;
   padding-top: 6%;
@@ -108,15 +108,62 @@ nav {
     }
   }
 }
-/* ----------PAGE 2------------- */
 
-#pageTwo {
+// ---------PRODUCTS----------
+
+#products {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  flex-direction: column;
+  .title {
+    align-self: center;
+  }
+  .boxes {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 5%;
+
+    .card {
+      border: $lightGreen 1px solid;
+      width: 20%;
+      // padding: 1%;
+      .card-title {
+        background-color: $lightGreen;
+        padding-top: 2%;
+        padding-left: 5%;
+        margin-bottom: 0 !important;
+        display: flex;
+        align-items: baseline;
+        i {
+          padding-right: 2%;
+          color: white;
+        }
+      }
+      .card-body {
+        hr {
+          border: $lightGreen 1px solid;
+        }
+        // padding-top: 0 !important;
+        // padding-bottom: 0 !important;
+        // padding-right: 0 !important;
+        // padding-left: 10%;
+      }
+    }
+  }
+}
+
+/* ----------WHYSQ------------- */
+
+#whySQ {
   padding-top: 8%;
   height: 100%;
   padding-bottom: 8%;
 }
 
-.pageTwoHead {
+.whySQHead {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -134,7 +181,7 @@ nav {
   }
 }
 
-.pageTwoText {
+.whySQText {
   // .row {
   //   flex-wrap: nowrap !important;
   // }
@@ -161,20 +208,6 @@ nav {
     display: flex;
     align-self: center;
   }
-  .list {
-    display: flex;
-    display: flex;
-    align-items: baseline;
-    justify-content: center;
-
-    > * {
-      padding: 0.3%;
-    }
-
-    p {
-      padding-right: 2%;
-    }
-  }
 }
 
 #marketplace::after {
@@ -198,16 +231,28 @@ nav {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   padding-top: 8%;
 
   h1 {
     text-align: center;
   }
+
+  .intro {
+    width: 80%;
+    align-self: center;
+    padding-top: 2%;
+  }
+  .hashtag {
+    color: $lightGreen;
+    align-self: center;
+    padding-top: 2%;
+  }
+
   .figuresProfile {
     display: flex;
     justify-content: flex-end;
-    padding-top: 4%;
+    padding-top: 6%;
     .profile {
       // display: grid;
 
@@ -343,6 +388,22 @@ nav {
     }
   }
 }
+@media (max-width: 870px) {
+  #products {
+    padding-bottom: 10%;
+    .boxes {
+      display: grid;
+      grid-gap: 3%;
+      justify-content: inherit;
+      grid-template-columns: auto auto;
+      grid-template-rows: auto auto;
+      padding: 5%;
+      .card {
+        width: 90%;
+      }
+    }
+  }
+}
 
 // 668px
 @media (max-width: 43em) {
@@ -357,22 +418,6 @@ nav {
     #brand {
       width: 50%;
     }
-  }
-
-  h1 {
-    font-size: 40px;
-  }
-
-  h2 {
-    font-size: 29px;
-  }
-
-  h3 {
-    font-size: 23px;
-  }
-
-  p {
-    font-size: 18px !important;
   }
 
   #pageTwo {
