@@ -48,47 +48,12 @@ window.addEventListener('load', function () {
 
 // BACKGROUND COLOR ANIMATION
 
-// ScrollTrigger.create({
-//   trigger: '#marketplace',
-//   start: 'top 40%',
-//   end: 'bottom 50%',
-//   onEnter: () =>
-//     gsap.to(['#marketplace', '#footer'], {
-//       backgroundColor: 'white',
-//       color: '#133644',
-//       duration: 2,
-//       ease: 'sine',
-//     }),
-//   onLeave: () =>
-//     gsap.to(['#marketplace', '#footer'], {
-//       backgroundColor: '#133644',
-//       color: 'white',
-//       duration: 2,
-//       ease: 'sine',
-//     }),
-//   onLeaveBack: () =>
-//     gsap.to(['#marketplace', '#footer'], {
-//       backgroundColor: '#133644',
-//       color: 'white',
-//       duration: 2,
-//       ease: 'sine',
-//     }),
-//   onEnterBack: () =>
-//     gsap.to(['#marketplace', '#footer'], {
-//       backgroundColor: 'white',
-//       color: '#133644',
-//       duration: 2,
-//       ease: 'sine',
-//     }),
-//   // markers: true,
-// });
-
 ScrollTrigger.create({
-  trigger: '#marketplace',
+  trigger: '#products',
   start: 'top 40%',
   end: 'bottom 50%',
   onEnter: () =>
-    gsap.to('#marketplace', {
+    gsap.to('#products', {
       backgroundColor: '#133644',
       color: 'white',
       duration: 2,
@@ -96,21 +61,21 @@ ScrollTrigger.create({
     }),
 
   onLeave: () =>
-    gsap.to('#marketplace', {
+    gsap.to('#products', {
       backgroundColor: 'white',
       color: '#133644',
       duration: 2,
       ease: 'sine',
     }),
   onLeaveBack: () =>
-    gsap.to('#marketplace', {
+    gsap.to('#products', {
       backgroundColor: 'white',
       color: '#133644',
       duration: 2,
       ease: 'sine',
     }),
   onEnterBack: () =>
-    gsap.to('#marketplace', {
+    gsap.to('#products', {
       backgroundColor: '#133644',
       color: 'white',
       duration: 2,
@@ -120,32 +85,33 @@ ScrollTrigger.create({
 });
 
 ScrollTrigger.create({
-  trigger: '#footer',
-  start: 'top 100%',
-  end: 'bottom 0%',
+  trigger: '#marketplace',
+  start: 'top 40%',
+  end: 'bottom 50%',
   onEnter: () =>
-    gsap.to('#footer', {
+    gsap.to(['#marketplace', '#footer'], {
       backgroundColor: '#133644',
       color: 'white',
       duration: 2,
       ease: 'sine',
     }),
+
   onLeave: () =>
-    gsap.to('#footer', {
+    gsap.to(['#marketplace', '#footer'], {
       backgroundColor: 'white',
       color: '#133644',
       duration: 2,
       ease: 'sine',
     }),
   onLeaveBack: () =>
-    gsap.to('#footer', {
+    gsap.to(['#marketplace', '#footer'], {
       backgroundColor: 'white',
       color: '#133644',
       duration: 2,
       ease: 'sine',
     }),
   onEnterBack: () =>
-    gsap.to('#footer', {
+    gsap.to(['#marketplace', '#footer'], {
       backgroundColor: '#133644',
       color: 'white',
       duration: 2,
