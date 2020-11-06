@@ -115,7 +115,7 @@ nav {
   display: flex;
   width: 100%;
   height: 100%;
-  padding-top: 10%;
+  padding-top: 5%;
   padding-bottom: 10%;
   flex-direction: column;
   position: relative;
@@ -129,63 +129,37 @@ nav {
     .row {
       // padding-bottom: 5%;
       margin-right: 0 !important;
-      i {
-        padding-left: 3%;
-        padding-bottom: 2%;
-      }
 
       .col-sm-6 {
         padding-bottom: 6%;
         padding-right: 6%;
         padding-left: 6%;
       }
+      i {
+        padding-left: 3%;
+        padding-right: 2%;
+        padding-bottom: 2%;
+        color: $white;
+      }
       .card {
         // width: 100%;
         // background-color: darkgrey;
         // border: $lightGreen solid 2px;
 
+        .card-title {
+          display: flex;
+          align-items: center;
+        }
         p {
           color: $green;
         }
         .card-text {
+          // padding-left: 11%;
           font-size: 17px;
         }
       }
     }
   }
-
-  // .boxes {
-  //   display: flex;
-  //   justify-content: space-evenly;
-  //   padding-top: 5%;
-
-  //   .card {
-  //     border: $lightGreen 2px solid;
-  //     width: 20%;
-  //     // padding: 1%;
-  //     .card-title {
-  //       background-color: $lightGreen;
-  //       padding-top: 2%;
-  //       padding-left: 5%;
-  //       margin-bottom: 0 !important;
-  //       display: flex;
-  //       align-items: baseline;
-  //       i {
-  //         padding-right: 2%;
-  //         color: white;
-  //       }
-  //     }
-  //     .card-body {
-  //       hr {
-  //         border: $lightGreen 1px solid;
-  //       }
-  //       // padding-top: 0 !important;
-  //       // padding-bottom: 0 !important;
-  //       // padding-right: 0 !important;
-  //       // padding-left: 10%;
-  //     }
-  //   }
-  // }
 }
 
 #products::after {
@@ -203,48 +177,6 @@ nav {
   z-index: 0;
   content: '';
 }
-
-// #products {
-//   display: flex;
-//   width: 100%;
-//   height: 100%;
-//   padding-top: 10%;
-//   padding-bottom: 10%;
-//   flex-direction: column;
-//   .title {
-//     align-self: center;
-//   }
-
-//   .boxes {
-//     display: flex;
-//     justify-content: space-evenly;
-//     padding-top: 5%;
-
-//     .box {
-//       border: $lightGreen 2px solid;
-//       // width: 33%;
-//       // padding: 1%;
-//       .box-title {
-//         background-color: $lightGreen;
-//         padding-top: 2%;
-//         padding-left: 5%;
-
-//         display: flex;
-//         align-items: baseline;
-//         i {
-//           padding-right: 2%;
-//           color: white;
-//         }
-//       }
-//       .box-body {
-//         padding: 3%;
-//         hr {
-//           border: $lightGreen 1px solid;
-//         }
-//       }
-//     }
-//   }
-// }
 
 /* ----------WHYSQ------------- */
 
@@ -273,9 +205,6 @@ nav {
 }
 
 .whySQText {
-  // .row {
-  //   flex-wrap: nowrap !important;
-  // }
   .col-sm {
     padding-top: 1%;
     text-align: center;
@@ -341,33 +270,33 @@ nav {
 
   .figuresProfile {
     display: flex;
-    justify-content: flex-end;
-    padding-top: 4%;
+    justify-content: center;
+    padding-top: 6%;
     .profile {
-      // display: grid;
-
-      // align-items: center;
+      display: flex;
+      flex-direction: column;
       padding: 1rem;
       width: 30%;
 
       img {
         border-radius: 5rem;
         width: 30%;
-        margin-left: 0%;
-        align-self: flex-end;
+        align-self: center;
+      }
+      .profileText {
+        text-align: center;
       }
       a {
         display: flex;
         align-items: baseline;
+        justify-content: center;
         > * {
-          padding: 0.5%;
+          padding: 3.5%;
         }
       }
       p {
         font-size: 18px;
-      }
-      h2 {
-        font-size: 20px;
+        margin-bottom: 0 !important;
       }
     }
   }
@@ -534,11 +463,21 @@ nav {
   }
 
   #team {
-    h2 {
-      font-size: 16px !important;
-    }
-    p {
-      font-size: 16px !important;
+    .figuresProfile {
+      .profile {
+        width: 34%;
+        img {
+          width: 40%;
+        }
+        p {
+          font-size: 14px !important;
+        }
+        a {
+          font-size: 12px;
+          align-items: center;
+          flex-direction: column;
+        }
+      }
     }
   }
 }
