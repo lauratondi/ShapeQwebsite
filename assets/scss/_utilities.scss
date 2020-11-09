@@ -8,18 +8,6 @@
   }
 }
 
-@font-face {
-  font-family: 'Museo Sans Rounded 300';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Museo Sans Rounded 300'),
-    url('/public/assets/MuseoSansRounded300.woff') format('woff');
-}
-// @font-face {
-//   font-family: 'Spearbox';
-//   src: url('/assets/spearbox_bigfontsite.com.ttf') format('truetype');
-// }
-
 * {
   padding: 0;
   margin: 0;
@@ -45,14 +33,14 @@ b {
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 55px;
 }
 
 h2 {
   font-size: 40px;
 }
 p {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 li {
@@ -79,18 +67,20 @@ img {
   width: 100vw;
   min-height: 100vh;
   padding: 0% !important;
+  margin: 0% !important;
+  padding-right: 1rem !important;
 }
 
 // 668px
 @media (max-width: 43em) {
   h1 {
-    font-size: 30px;
+    font-size: 35px;
   }
 
   h2 {
     font-size: 20px;
   }
   p {
-    font-size: 16px !important;
+    font-size: 15px !important;
   }
 }

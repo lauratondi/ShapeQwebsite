@@ -71,38 +71,88 @@
     </header>
     <div class="container-fluid">
       <section class="section bg-white" id="home">
-        <div class="home-left">
-          <div class="infoHome">
-            <div class="home-text">
-              <h1>The Green Energy Marketplace</h1>
-              <p>Shape Q brings green energy trading into the digital era.</p>
-              <p>
-                Shape Q is the next generation energy platform in Europe for OTC
-                trading in Physical Power, Gas, PPAs & Renewable Certificates.
-              </p>
-            </div>
-            <button class="btnPrimary">
-              <a href="contact.html">Get In Touch</a>
-            </button>
+        <div class="infoHome">
+          <div class="home-text">
+            <h1><b>The Green Energy Marketplace</b></h1>
+            <br />
+            <p>Shape Q brings green energy trading into the digital era.</p>
+            <br />
+            <p id="ani">
+              The next generation energy platform in Europe for OTC trading in
+              Physical Power, Gas, Power Purchase Agreement & Renewable
+              Certificates.
+            </p>
+            <br />
           </div>
+          <button class="btnPrimary">
+            <a href="contact.html">Get In Touch</a>
+          </button>
         </div>
-        <div class="home-right">
-          <video controls>
-            <source src="/assets/video/production ID_4571538.mp4" />
-          </video>
-        </div>
+      </section>
+      <section id="video">
+        <video controls>
+          <source src="/assets/video/production ID_4571538.mp4" />
+        </video>
       </section>
       <section class="section" id="products">
         <div class="title"><h1>Products</h1></div>
 
         <div class="boxes">
+          <div class="card">
+            <div class="card-header">
+              <i class="fas fa-bolt fa-lg"></i>
+              <p><b>Physical Power</b></p>
+            </div>
+            <div class="card-body">
+              Baseload/Peak/Offpeak. <br />
+              Customizable contract. <br />
+              Any contract can be traded green.
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <i class="fas fa-burn fa-lg"></i>
+              <p><b>Phisical Gas</b></p>
+            </div>
+            <div class="card-body">
+              Baseload and Shapes. <br />
+              Customizable contract.<br />
+              Any contract can be traded green.
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <i class="fa fa-envira fa-lg"></i>
+              <p><b>Renewable Certificates</b></p>
+            </div>
+            <div class="card-body">
+              GOs on power and gas. <br />
+              Any renewable technology. <br />
+              Trade Certificates as standalone <br />
+              or together with Power/Gas.
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <i class="fas fa-file-alt fa-lg"></i>
+              <p><b>Green PPAs</b></p>
+            </div>
+            <div class="card-body">
+              Any renewable technology. <br />
+              Advertise your capacity to the market. <br />
+              Receive quotes and trade.
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="boxes">
           <div class="row">
             <div class="col-sm-6">
               <i class="fas fa-bolt fa-2x"></i>
               <div class="card">
                 <div class="card-body">
                   <p class="card-title">
-                    <!-- <i class="fas fa-bolt fa-2x"></i> -->
+                    
                     <b>Physical Power</b>
                   </p>
                   <p class="card-text">
@@ -120,7 +170,7 @@
               <div class="card">
                 <div class="card-body">
                   <p class="card-title">
-                    <!-- <i class="fas fa-burn fa-2x"></i> -->
+                 
                     <b>Physical Gas</b>
                   </p>
                   <p class="card-text">
@@ -139,7 +189,7 @@
               <div class="card">
                 <div class="card-body">
                   <p class="card-title">
-                    <!-- <i class="fa fa-envira fa-2x"></i -->
+          
                     <b>Renewable Certificates</b>
                   </p>
                   <p class="card-text">
@@ -156,7 +206,7 @@
               <div class="card">
                 <div class="card-body">
                   <p class="card-title">
-                    <!-- <i class="fas fa-file-alt fa-2x"></i> -->
+                   
                     <b>Green PPAs</b>
                   </p>
                   <p class="card-text">
@@ -168,7 +218,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
       </section>
       <section class="section bg-white" id="whySQ">
         <div class="whySQHead">
@@ -329,12 +379,14 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="splitText.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+
     <script src="main.js"></script>
-    <script
+    <!-- <script
       type="text/javascript"
       async
       src="//l.getsitecontrol.com/3w0on9zw.js"
-    ></script>
+    ></script> -->
   </body>
 </html>

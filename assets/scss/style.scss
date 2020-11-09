@@ -16,11 +16,10 @@ header {
 
 .brand {
   width: 60%;
-  // align-self: center;
+  padding-left: 1.5rem;
 
   #brand {
-    width: 30%;
-    margin-left: 5%;
+    width: 25%;
   }
 }
 
@@ -28,9 +27,8 @@ nav {
   // width: 40%;
   justify-content: flex-end !important;
   align-items: flex-end !important;
-  // .navbar-nav {
-  //   // align-items: flex-end !important;
-  // }
+  padding: 0 !important;
+  padding-right: 1.5rem !important;
   .nav-link {
     padding-left: 0 !important;
   }
@@ -59,37 +57,21 @@ nav {
   width: 100%;
   height: 100vh;
   display: flex;
-  flex-direction: row;
-  padding-top: 6%;
-  padding-bottom: 6%;
-  align-items: center;
-
-  .home-right {
-    width: 50%;
-    padding-right: 2%;
-    video {
-      width: 100%;
-    }
-  }
-  .home-left {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .logoDiv {
-    padding-top: 8%;
-    width: 15%;
-  }
+  // align-items: center;
 
   .infoHome {
     flex-direction: column;
-    align-items: end;
+    align-items: center;
     justify-content: center;
     display: flex;
-    padding: 3%;
+
+    width: 100%;
     .home-text {
-      padding: 4%;
+      width: 100%;
+      h1,
+      p {
+        text-align: center;
+      }
     }
   }
 
@@ -101,7 +83,7 @@ nav {
     background-color: $lightGreen;
     color: $white;
     letter-spacing: 1px;
-    margin-left: 4%;
+
     font-size: 18px;
     &:hover {
       font-size: 19px;
@@ -109,54 +91,52 @@ nav {
   }
 }
 
+// VIDEO
+#video {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  video {
+    width: 100%;
+  }
+}
 // ---------PRODUCTS----------
 
 #products {
   display: flex;
   width: 100%;
-  height: 100%;
-  padding-top: 5%;
-  padding-bottom: 10%;
-  flex-direction: column;
+  height: 100vh;
   position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   .title {
     align-self: center;
   }
   .boxes {
-    padding-top: 2%;
-    padding-right: 8%;
-    padding-left: 8%;
-    .row {
-      // padding-bottom: 5%;
-      margin-right: 0 !important;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    padding-top: 3%;
+    .card {
+      background-color: $green !important;
+      // background-blend-mode: color;
+      border: $white 2px solid;
+      width: 20%;
 
-      .col-sm-6 {
-        padding-bottom: 6%;
-        padding-right: 6%;
-        padding-left: 6%;
+      .card-header {
+        display: flex;
+        align-items: baseline;
+        padding: 0.25rem 0.55rem !important;
+        i {
+          padding: 2%;
+        }
       }
-      i {
-        padding-left: 3%;
-        padding-right: 2%;
-        padding-bottom: 2%;
-        color: $white;
-      }
-      .card {
-        // width: 100%;
-        // background-color: darkgrey;
-        // border: $lightGreen solid 2px;
-
-        .card-title {
-          display: flex;
-          align-items: center;
-        }
-        p {
-          color: $green;
-        }
-        .card-text {
-          // padding-left: 11%;
-          font-size: 17px;
-        }
+      .card-body {
+        padding-left: 0.95rem !important;
+        padding-top: 0;
       }
     }
   }
@@ -392,8 +372,8 @@ nav {
     }
   }
 
-  #pageTwo {
-    .pageTwoHead {
+  #whySQ {
+    .whySQHead {
       .logo {
         width: 6% !important;
         padding-bottom: 1%;
@@ -409,12 +389,14 @@ nav {
 }
 @media (max-width: 800px) {
   #products {
-    padding-bottom: 10%;
+    padding-top: 3%;
+    height: 120vh;
+    justify-content: inherit;
     .boxes {
       display: grid;
       grid-gap: 3%;
 
-      padding: 5%;
+      // padding: 5%;
       .card {
         width: 100%;
       }
@@ -425,10 +407,8 @@ nav {
 // 668px
 @media (max-width: 43em) {
   #home {
-    flex-direction: column-reverse;
-    .home-right,
-    .home-left {
-      width: 80%;
+    .home-text {
+      width: 90% !important;
     }
   }
   .brand {

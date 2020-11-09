@@ -10,6 +10,33 @@
 // }
 // play();
 
+// TEXT ANIMATION
+
+var split = new SplitText('#ani', {
+  type: 'chars,words',
+  wordsClass: 'word++',
+  charsClass: 'word++',
+});
+
+var splitAni = new TimelineMax();
+splitAni.set('#ani', { clearProps: 'all' });
+splitAni.from(
+  split.chars,
+  {
+    duration: 2,
+    opacity: 0,
+    ease: 'steps(1)',
+    display: 'none',
+    stagger: 0.05,
+  },
+
+  '+=.5'
+);
+
+window.addEventListener('load', function () {
+  splitAni.restart();
+});
+
 // ICONS ANIMATION
 var icoAni = new TimelineMax({
   duration: 1,
