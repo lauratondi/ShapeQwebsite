@@ -30,7 +30,7 @@ splitAni.from(
     stagger: 0.05,
   },
 
-  '+=.5'
+  '-=.5'
 );
 
 window.addEventListener('load', function () {

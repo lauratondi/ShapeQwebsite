@@ -234,9 +234,7 @@ nav {
     .up {
       width: 80%;
       align-self: center;
-      // #carousel {
-      //   height: 80%;
-      // }
+
       .carousel-control-next,
       .carousel-control-prev {
         filter: invert(100%);
@@ -287,14 +285,17 @@ nav {
         display: flex;
         align-items: baseline;
         justify-content: center;
-        > * {
-          padding: 3.5%;
+        // > * {
+        //   padding: 3.5%;
+        // }
+        i {
+          padding-left: 3.5%;
         }
       }
-      p {
-        font-size: 18px;
-        margin-bottom: 0 !important;
-      }
+      // p {
+      //   font-size: 18px;
+      //   margin-bottom: 0 !important;
+      // }
     }
   }
 }
@@ -355,9 +356,16 @@ nav {
   width: 100%;
   align-items: baseline;
 
+  > * {
+    padding-right: 0.5%;
+  }
   p {
     font-size: 15px;
-    padding-right: 2%;
+    a {
+      &:hover {
+        font-size: 15px;
+      }
+    }
   }
 }
 
@@ -377,18 +385,18 @@ nav {
 @media (max-width: 1047px) {
   .nav-item {
     padding-left: 0px !important;
-    padding-right: 0px !important;
+    padding-right: 0.5px !important;
   }
 }
 
 // 992px
 @media (max-width: 62em) {
   header {
-    align-items: baseline;
+    align-items: flex-start;
     .brand {
       width: 50%;
       #brand {
-        width: 35%;
+        width: 30%;
       }
     }
   }
@@ -443,7 +451,7 @@ nav {
   .brand {
     padding-left: 1rem !important;
     #brand {
-      width: 45%;
+      width: 40% !important;
     }
   }
 
@@ -462,22 +470,22 @@ nav {
     width: 95%;
   }
 
-  #marketplace {
-    height: 100%;
-    .content {
-      flex-direction: column-reverse;
-      align-items: center;
-      .right {
-        width: 90%;
-      }
+  // #marketplace {
+  //   height: 100%;
+  //   .content {
+  //     flex-direction: column-reverse;
+  //     align-items: center;
+  //     .right {
+  //       width: 90%;
+  //     }
 
-      .left {
-        width: 90%;
-        padding-bottom: 8%;
-        padding-top: 5%;
-      }
-    }
-  }
+  //     .left {
+  //       width: 90%;
+  //       padding-bottom: 8%;
+  //       padding-top: 5%;
+  //     }
+  //   }
+  // }
 
   #team {
     .figuresProfile {
@@ -489,10 +497,25 @@ nav {
         p {
           font-size: 14px !important;
         }
-        a {
-          font-size: 12px;
-          align-items: center;
-          flex-direction: column;
+      }
+    }
+  }
+
+  #contact {
+    .form {
+      width: 60%;
+    }
+  }
+
+  #footer {
+    > * {
+      padding-right: 1%;
+    }
+    p {
+      font-size: 14px !important;
+      a {
+        &:hover {
+          font-size: 14px;
         }
       }
     }
