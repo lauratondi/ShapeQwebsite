@@ -37,6 +37,22 @@ window.addEventListener('load', function () {
   splitAni.restart();
 });
 
+// VIDEO CONTROL
+var playBtn = document.getElementById('play-btn');
+
+playBtn.addEventListener('click', pausePlayHandler, false);
+video1.addEventListener('ended', videoEndHandler, false);
+
+function pausePlayHandler(e) {
+  video1.play();
+
+  playBtn.style.visibility = 'hidden';
+}
+
+function videoEndHandler(e) {
+  playBtn.style.visibility = 'visible';
+}
+
 // ICONS ANIMATION
 var icoAni = new TimelineMax({
   duration: 1,
