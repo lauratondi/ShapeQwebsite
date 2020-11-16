@@ -238,14 +238,7 @@ nav {
     > * {
       padding-top: 2%;
     }
-    // .down {
-    //   width: 80%;
-    //   .text {
-    //     display: flex;
-    //     flex-direction: column;
-    //     text-align: center;
-    //   }
-    // }
+
     .up {
       width: 80%;
       align-self: center;
@@ -497,11 +490,17 @@ nav {
   }
 
   #marketplace {
+    .up {
+      width: 90% !important;
+    }
     .carousel-caption {
       padding-bottom: 0 !important;
       // right: 0 !important;
       bottom: -13px !important;
       padding-bottom: 0 !important;
+
+      right: 7% !important;
+      left: 7% !important;
 
       .p-big {
         font-size: 11px !important;

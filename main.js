@@ -40,16 +40,16 @@ window.addEventListener('load', function () {
 // VIDEO CONTROL
 var playBtn = document.getElementById('play-btn');
 
-playBtn.addEventListener('click', pausePlayHandler, false);
-video1.addEventListener('ended', videoEndHandler, false);
+playBtn.addEventListener('click', playHandler, false);
+video1.addEventListener('ended', endHandler, false);
 
-function pausePlayHandler(e) {
+function playHandler(e) {
   video1.play();
 
   playBtn.style.visibility = 'hidden';
 }
 
-function videoEndHandler(e) {
+function endHandler(e) {
   playBtn.style.visibility = 'visible';
 }
 
