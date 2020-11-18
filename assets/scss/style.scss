@@ -239,10 +239,13 @@ nav {
     > * {
       padding-top: 2%;
     }
-
+    .carousel-caption {
+      bottom: 9% !important;
+    }
     .up {
       width: 80%;
       align-self: center;
+
       #green {
         padding-bottom: 0 !important;
       }
