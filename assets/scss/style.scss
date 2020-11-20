@@ -325,6 +325,8 @@ nav {
         width: 30%;
         align-self: center;
         flex: 1 0 auto;
+        flex-shrink: 0;
+        height: auto;
       }
       .profileText {
         text-align: center;
