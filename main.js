@@ -91,74 +91,74 @@ window.addEventListener('load', function () {
 
 // BACKGROUND COLOR ANIMATION
 
-ScrollTrigger.create({
-  trigger: '#products',
-  start: 'top 40%',
-  end: 'bottom 50%',
-  onEnter: () =>
-    gsap.to('#products', {
-      backgroundColor: '#133644',
-      color: 'white',
-      duration: 2,
-      ease: 'sine',
-    }),
+// ScrollTrigger.create({
+//   trigger: '#products',
+//   start: 'top 40%',
+//   end: 'bottom 50%',
+//   onEnter: () =>
+//     gsap.to('#products', {
+//       backgroundColor: '#133644',
+//       color: 'white',
+//       duration: 2,
+//       ease: 'sine',
+//     }),
 
-  onLeave: () =>
-    gsap.to('#products', {
-      backgroundColor: 'white',
-      color: '#133644',
-      duration: 2,
-      ease: 'sine',
-    }),
-  onLeaveBack: () =>
-    gsap.to('#products', {
-      backgroundColor: 'white',
-      color: '#133644',
-      duration: 2,
-      ease: 'sine',
-    }),
-  onEnterBack: () =>
-    gsap.to('#products', {
-      backgroundColor: '#133644',
-      color: 'white',
-      duration: 2,
-      ease: 'sine',
-    }),
-  // markers: true,
-});
+//   onLeave: () =>
+//     gsap.to('#products', {
+//       backgroundColor: 'white',
+//       color: '#133644',
+//       duration: 2,
+//       ease: 'sine',
+//     }),
+//   onLeaveBack: () =>
+//     gsap.to('#products', {
+//       backgroundColor: 'white',
+//       color: '#133644',
+//       duration: 2,
+//       ease: 'sine',
+//     }),
+//   onEnterBack: () =>
+//     gsap.to('#products', {
+//       backgroundColor: '#133644',
+//       color: 'white',
+//       duration: 2,
+//       ease: 'sine',
+//     }),
+//   // markers: true,
+// });
 
-ScrollTrigger.create({
-  trigger: '#marketplace',
-  start: 'top 40%',
-  end: 'bottom 50%',
-  onEnter: () =>
-    gsap.to(['#marketplace', '#footer'], {
-      backgroundColor: '#133644',
-      color: 'white',
-      duration: 2,
-      ease: 'sine',
-    }),
+// ScrollTrigger.create({
+//   trigger: '#marketplace',
+//   start: 'top 40%',
+//   end: 'bottom 50%',
+//   onEnter: () =>
+//     gsap.to(['#marketplace', '#footer'], {
+//       backgroundColor: '#133644',
+//       color: 'white',
+//       duration: 2,
+//       ease: 'sine',
+//     }),
 
-  onLeave: () =>
-    gsap.to(['#marketplace', '#footer'], {
-      backgroundColor: 'white',
-      color: '#133644',
-      duration: 2,
-      ease: 'sine',
-    }),
-  onLeaveBack: () =>
-    gsap.to(['#marketplace', '#footer'], {
-      backgroundColor: 'white',
-      color: '#133644',
-      duration: 2,
-      ease: 'sine',
-    }),
-  onEnterBack: () =>
-    gsap.to(['#marketplace', '#footer'], {
-      backgroundColor: '#133644',
-      color: 'white',
-      duration: 2,
-      ease: 'sine',
-    }),
-  // markers: true,
-});
+//   onLeave: () =>
+//     gsap.to(['#marketplace', '#footer'], {
+//       backgroundColor: 'white',
+//       color: '#133644',
+//       duration: 2,
+//       ease: 'sine',
+//     }),
+//   onLeaveBack: () =>
+//     gsap.to(['#marketplace', '#footer'], {
+//       backgroundColor: 'white',
+//       color: '#133644',
+//       duration: 2,
+//       ease: 'sine',
+//     }),
+//   onEnterBack: () =>
+//     gsap.to(['#marketplace', '#footer'], {
+//       backgroundColor: '#133644',
+//       color: 'white',
+//       duration: 2,
+//       ease: 'sine',
+//     }),
+//   // markers: true,
+// });

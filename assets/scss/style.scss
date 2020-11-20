@@ -40,6 +40,7 @@ nav {
     padding: 0px 13px;
     border: none;
     background-color: $lightGreen;
+
     a {
       color: $white !important;
       letter-spacing: 1px;
@@ -67,10 +68,15 @@ nav {
     width: 100%;
     .home-text {
       width: 100%;
+      margin-top: -4%;
       h1,
       h2,
       p {
         text-align: center;
+      }
+      p {
+        padding-top: 5%;
+        padding-bottom: 5%;
       }
     }
   }
@@ -83,10 +89,11 @@ nav {
     background-color: $lightGreen;
     color: $white;
     letter-spacing: 1px;
-
+    cursor: pointer;
     font-size: 18px;
     &:hover {
       font-size: 19px;
+      border: none;
     }
   }
 }
@@ -124,8 +131,8 @@ nav {
   width: 100%;
   min-height: 100vh;
   height: 100vh;
-
-  position: relative;
+  background-image: linear-gradient(180deg, $lightGreen, $green);
+  // position: relative;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -161,62 +168,78 @@ nav {
   }
 }
 
-#products::after {
-  background-image: url('/assets/img/photos/ice.jpg');
-  // padding-top: 10%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  opacity: 0.2;
-  position: absolute;
-  top: 0%;
-  bottom: 0%;
-  right: 0%;
-  left: 0%;
-  z-index: 0;
-  content: '';
-}
+// #products::after {
+//   background-image: url('/assets/img/photos/ice.jpg');
+//   // padding-top: 10%;
+//   background-size: cover;
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   opacity: 0.2;
+//   position: absolute;
+//   top: 0%;
+//   bottom: 0%;
+//   right: 0%;
+//   left: 0%;
+//   z-index: 0;
+//   content: '';
+// }
 
 /* ----------WHYSQ------------- */
 
 #whySQ {
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
+  max-width: 100%;
 
-.whySQHead {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  .logo {
-    width: 5%;
+  .whySQHead {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    .logo {
+      width: 5%;
 
-    img {
-      width: 100%;
-      height: auto;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    > * {
+      padding: 0.5%;
     }
   }
-  > * {
-    padding: 0.5%;
-  }
-}
 
-.whySQText {
-  .container {
-    padding-right: 0 !important;
-    padding-left: 0 !important;
+  .container-fluid {
+    padding-right: 0rem !important;
+    width: 100%;
+    flex: 1 0 auto;
+    height: 100%;
+  }
+  .row {
+    flex: 1 0 auto;
   }
   .col-sm {
     padding-top: 5%;
-
+    // flex: 1 0 auto;
     text-align: center;
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      // IE9+ CSS
+      .ie9up {
+        flex: 1 0 auto;
+      }
+    }
   }
   i {
     padding-bottom: 2%;
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      // IE9+ CSS
+      .ie9up {
+        flex: 1 0 auto;
+      }
+    }
   }
 }
 // ----------MARKETPLACE-------------
@@ -246,9 +269,9 @@ nav {
       width: 80%;
       align-self: center;
 
-      #green {
-        padding-bottom: 0 !important;
-      }
+      // #green {
+      //   padding-bottom: 0 !important;
+      // }
       p {
         color: $green;
       }
@@ -271,7 +294,7 @@ nav {
   padding-bottom: 8%;
   background-image: linear-gradient(180deg, $lightGreen, $green);
   .intro {
-    width: 80%;
+    width: 69%;
     align-self: center;
     // padding-top: 8%;
   }
@@ -288,6 +311,8 @@ nav {
     display: flex;
     justify-content: center;
     padding-top: 6%;
+    height: 100%;
+    flex: 1 0 auto;
     .profile {
       display: flex;
       flex-direction: column;
@@ -298,6 +323,7 @@ nav {
         border-radius: 5rem;
         width: 30%;
         align-self: center;
+        flex: 1 0 auto;
       }
       .profileText {
         text-align: center;
@@ -446,8 +472,7 @@ nav {
     .boxes {
       display: grid;
       grid-gap: 3%;
-
-      // padding: 5%;
+      padding: 3%;
       .card {
         width: 100%;
       }
